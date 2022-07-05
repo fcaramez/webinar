@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Ironhack Tech For Tides</title>
+  </head>
+  <body>
+    <h1>Ironhack Tech For Tides</h1>
+    <table id="wave-list">
+      <thead>
+        <tr>
+          <th>Beach Name</th>
+          <th>Weather Status</th>
+          <th>Tide Status</th>
+          <th>Difficulty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="wave">
+          <td class="name">
+            <span>Praia dos Pescadores</span>
+          </td>
+          <td class="weather"><span>Sunny</span></td>
+          <td class="tide-status">
+            <span>Diurnal Tide</span>
+          </td>
+          <td class="experience"><span>Experienced</span></td>
+          <td class="action">
+            <button class="btn btn-remove">Remove</button>
+          </td>
+        </tr>
+        <!-- Iteration 2: Add more products here -->
+      </tbody>
+      <tfoot>
+        <tr class="add-wave">
+          <td>
+            <input type="text" id="beach-name" placeholder="Beach Name" />
+          </td>
+          <td>
+            <select name="" id="weather">
+              <option value="Sunny">Sunny</option>
+              <option value="Windy">Windy</option>
+              <option value="Rainy">Rainy</option>
+              <option value="Cloudy">Cloudy</option>
+            </select>
+          </td>
+          <td>
+            <select name="" id="tide">
+              <option value="Diurnal Tide">Diurnal Tide</option>
+              <option value="Semi-diurnal Tide">Semi-diurnal Tide</option>
+              <option value="Mixed Tide">Mixed Tide</option>
+              <option value="Meteorological Tide">Meteorological Tide</option>
+            </select>
+          </td>
+          <td>
+            <div>
+              <select name="" id="experience">
+                <option value="Begginer">Begginer</option>
+                <option value="Experience">Experienced</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <button id="create" class="btn-create btn">Add Beach</button>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <script type="text/javascript" src="code.js"></script>
+  </body>
+</html>
